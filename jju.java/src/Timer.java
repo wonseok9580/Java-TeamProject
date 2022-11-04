@@ -32,7 +32,7 @@ public class Timer extends JLabel implements Runnable{
 			s%=60;
 
 			setText(h+":"+m+":"+s);//폼에 출력
-			System.out.printf("%02d:%02d:%02d\n",h,m,s);//잘되는지 확인용
+			System.out.printf("%02d:%02d:%02d\n",h,m,s);//잘되는지 확인용 삭제가능
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
