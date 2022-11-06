@@ -71,15 +71,15 @@ public class DBA {
 		}
 	}
 	public void deleteData(int id) {
-      String sql="delete from test where 사원번호=?";
-      PreparedStatement pstmt=null;
+	      String sql="delete from test where 사원번호=?";
+	      PreparedStatement pstmt=null;
 
-      try {
-         pstmt.getConnection().prepareStatement(sql);
-         pstmt.setInt(1,id);
-         pstmt.executeUpdate();
-      } catch (SQLException e) {
-         throw new RuntimeException(e);
-      }
-   }
+	      try {
+	         pstmt.getConnection().prepareStatement(sql);
+	         pstmt.setInt(1,id);
+	         pstmt.executeUpdate();
+	      } catch (SQLException e) {
+	         throw new RuntimeException(e);
+	      }
+	   }
 }
